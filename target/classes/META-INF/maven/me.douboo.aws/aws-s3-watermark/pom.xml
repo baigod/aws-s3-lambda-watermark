@@ -1,0 +1,43 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>me.douboo.aws</groupId>
+	<artifactId>aws-s3-watermark</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>亚马逊S3加水印</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<java.version>1.8</java.version>
+		<maven.test.skip>true</maven.test.skip>
+		<tomcat.version>8.0.32</tomcat.version>
+		<maven.compiler.source>${java.version}</maven.compiler.source>
+		<maven.compiler.target>${java.version}</maven.compiler.target>
+		<druid.version>1.0.31</druid.version>
+	</properties>
+	<scm>
+		<url>https://github.com/15174834/aws-s3-watermark</url>
+	</scm>
+	<developers>
+		<developer>
+			<id>baishen</id>
+			<name>白神</name>
+			<email>15174834 at qq.com</email>
+			<organization>Douboo Software, Inc.</organization>
+			<roles>
+				<role>Project lead</role>
+			</roles>
+		</developer>
+	</developers>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>${java.version}</source>
+					<target>${java.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+</project>
