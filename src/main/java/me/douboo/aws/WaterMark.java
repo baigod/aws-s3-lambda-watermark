@@ -314,14 +314,14 @@ public class WaterMark {
 	public static int getTextLength(String text) {
 		// 水印文字长度
 		int length = text.length();
-
-		for (int i = 0; i < text.length(); i++) {
-			String s = String.valueOf(text.charAt(i));
-			if (s.getBytes().length > 1) {
-				length++;
-			}
-		}
-		length = length % 2 == 0 ? length / 2 : length / 2 + 1;
+//
+//		for (int i = 0; i < text.length(); i++) {
+//			String s = String.valueOf(text.charAt(i));
+//			if (s.getBytes().length > 1) {
+//				length++;
+//			}
+//		}
+//		length = length % 2 == 0 ? length / 2 : length / 2 + 1;
 		return length;
 	}
 }

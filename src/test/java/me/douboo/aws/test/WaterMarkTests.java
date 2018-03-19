@@ -14,7 +14,7 @@ public class WaterMarkTests {
 	@Test
 	public void testTextWaterMark() throws IOException {
 		File file = new File("C:\\Users\\Administrator\\Pictures\\test.jpg");
-		byte[] textWaterMark = WaterMark.textWaterMark(new FileInputStream(file), "KYC IMG");
+		byte[] textWaterMark = WaterMark.textWaterMark(new FileInputStream(file), "FOR KYC ONLY");
 		OutputStream os = new FileOutputStream("C:\\Users\\Administrator\\Desktop\\新建文件夹\\test1.jpg");
 		os.write(textWaterMark);
 		os.close();
