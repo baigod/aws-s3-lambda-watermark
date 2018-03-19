@@ -64,7 +64,7 @@ public class S3WaterMark implements RequestHandler<S3Event, String> {
 			String contentType = object.getObjectMetadata().getContentType();
 			logger.log("Content Type:   " + contentType + "\n");
 			if (contentType.startsWith("image")) {
-				byte[] textWaterMark = WaterMark.textWaterMark(object.getObjectContent(), "TEST");
+				byte[] textWaterMark = WaterMark.textWaterMark(object.getObjectContent(), "FOR KYC ONLY");
 				// Save Object
 				ObjectMetadata oMetadata = object.getObjectMetadata();
 				ByteArrayInputStream bais = new ByteArrayInputStream(textWaterMark);
