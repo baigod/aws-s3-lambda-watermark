@@ -2,7 +2,7 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>me.douboo.aws</groupId>
-	<artifactId>aws-s3-watermark</artifactId>
+	<artifactId>s3-lambda-watermark</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>亚马逊S3加水印</name>
 	<properties>
@@ -15,7 +15,7 @@
 		<druid.version>1.0.31</druid.version>
 	</properties>
 	<scm>
-		<url>https://github.com/15174834/aws-s3-watermark</url>
+		<url>https://github.com/15174834/aws-s3-lambda-watermark</url>
 	</scm>
 	<developers>
 		<developer>
